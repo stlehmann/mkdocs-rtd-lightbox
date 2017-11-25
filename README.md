@@ -18,9 +18,57 @@ See documentation of the [markdown-lightbox](https://github.com/MrLeeh/markdown-
 
 1. Create a new mkdocs project
 
-    $ mkdocs new foodoc
-    
+```bash
+$ mkdocs new foodoc
+```
+    
 2. Clone this repositiory in your project directory
 
-    $ cd foodoc
-    $ git clone https://github.com/MrLeeh/mkdocs-rtd-lightbox
+```bash
+$ cd foodoc
+$ git clone https://github.com/MrLeeh/mkdocs-rtd-lightbox
+```
+
+3. Set mkdocs-rtd-lightbox as your custom theme in the mkdocs.yml
+
+```yaml
+theme:
+  name: null
+  custom_dir: mkdocs-rtd-lightbox
+```
+
+4. Install markdown-lightbox addon
+
+```bash
+$ pip install -e git+https://github.com/MrLeeh/markdown-lightbox.git#egg=markdown-lighbox
+```
+
+5. Add markdown-lightbox plugin to your mkdocs.yml
+
+The resulting mkdocs.yml should look like this:
+
+```yaml
+site_name: My Docs
+theme:
+  name: null
+  custom_dir: mkdocs-rtd-lightbox
+markdown_extensions:
+  - lightbox
+  - extra
+```
+
+## Usage
+
+The basic syntax for creating a lightbox-linked image is:
+
+```
+![Description](path/to/image.jpg)
+```
+
+However you might want to scale the image down. You can do this with the following syntax:
+
+```
+![Description](path/to/image.jpg){size="width:200px;"}
+``` 
+This is possible because we added the [Extra extension package](https://pythonhosted.org/Markdown/extensions/extra.html) 
+of [Python Markdown](https://pythonhosted.org/Markdown/index.html) which allows the use of attribute lists.
