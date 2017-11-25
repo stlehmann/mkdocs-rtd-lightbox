@@ -50,7 +50,7 @@ The resulting mkdocs.yml should look like this:
 ```yaml
 site_name: My Docs
 theme:
-  name: null
+  name: readthedocs
   custom_dir: mkdocs-rtd-lightbox
 markdown_extensions:
   - lightbox
