@@ -40,7 +40,7 @@ theme:
 4. Install markdown-lightbox addon
 
 ```bash
-$ pip install -e git+https://github.com/MrLeeh/markdown-lightbox.git#egg=markdown-lighbox
+$ pip install -e git+https://github.com/MrLeeh/markdown-lightbox.git#egg=markdown-lightbox
 ```
 
 5. Add markdown-lightbox plugin to your mkdocs.yml
