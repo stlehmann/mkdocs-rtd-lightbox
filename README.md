@@ -26,24 +26,16 @@ $ mkdocs new foodoc
 
 ```bash
 $ cd foodoc
-$ git clone https://github.com/MrLeeh/mkdocs-rtd-lightbox
+$ git clone https://github.com/stlehmann/mkdocs-rtd-lightbox
 ```
 
-3. Set mkdocs-rtd-lightbox as your custom theme in the mkdocs.yml
-
-```yaml
-theme:
-  name: null
-  custom_dir: mkdocs-rtd-lightbox
-```
-
-4. Install markdown-lightbox addon
+3. Install markdown-lightbox addon
 
 ```bash
 $ pip install -e git+https://github.com/MrLeeh/markdown-lightbox.git#egg=markdown-lightbox
 ```
 
-5. Add markdown-lightbox plugin to your mkdocs.yml
+4. Add markdown-lightbox plugin to your mkdocs.yml
 
 The resulting mkdocs.yml should look like this:
 
